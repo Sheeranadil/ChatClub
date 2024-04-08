@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application - Sign Up</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for styling */
+        body {
+            background-color:rgb(189, 186, 186);
+            font-family: cursive;/* Stylish font */
+        }
+
+        .container {
+            margin-top: 100px;
+           border-radius: 10px;
+        }
+
+        .card {
+            border-radius: 10px;
+        }
+
+        .card-header {
+            background-color: #eaee0a;
+            /* Bootstrap primary color for header */
+        }
+
+        .card-header h3 {
+            color: #070707d5; /* Adjusted text color for header */
+            text-align: center; /* Centered header text */
+        }
+
+        .form-group label {
+            color: #070707d5; /* Adjusted label text color */
+        }
+
+        .btn-primary {
+            background-color: #007bff; /* Blue color for button */
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue color on hover */
+            border-color: #0056b3;
+        }
+
+        .text-center a {
+            color: #070707d5; /* Adjusted link color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Sign Up for ChatClub</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email"
+                                    placeholder="Enter your email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="tempEmail">Temporary Email Address</label>
+                                <input type="email" class="form-control" id="tempEmail"
+                                    placeholder="Enter a temporary email address">
+                                <small id="tempEmailHelp" class="form-text text-muted">Use a temporary email if you don't want to use your personal email<a href="https://temp-mail.org/en/"> Get mail</a> </small>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Enter your password">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirmPassword"
+                                    placeholder="Confirm your password">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                        </form>
+                        <hr>
+                        <p class="text-center">Already have an account? <a href="#">Sign In</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

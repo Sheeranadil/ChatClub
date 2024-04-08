@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Application</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for styling */
+    body {
+      background-color: rgba(189, 186, 186, 0.8);
+      background-size: cover;
+      background-position: center;
+      font-family: cursive;/* Stylish font */
+    }
+    .container {
+      margin-top: 100px;
+    }
+    .card {
+      border-radius: 10px;
+      background-color: rgba(247, 252, 251, 0.8); /* Semi-transparent white background for card */
+      box-shadow: #020202;
+    }
+    .card-header {
+      background-color: #eaee0a; /* Bootstrap primary color for header */
+    }
+    .card-header h3 {
+      color: rgb(80, 77, 77); /* Text color for header */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="text-center" style="color: #070707d5;">ChatClub</h3>
+
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter your username">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            </form>
+            <hr>
+            <p class="text-center">Don't have an account? <a href="signup.html">Sign Up</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

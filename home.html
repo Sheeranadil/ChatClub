@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for styling */
+        body {
+            background-color: #f8f9fa;
+            font-family: cursive;
+            margin: 0; /* Reset default margin */
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .jumbotron {
+            background-image: url('Home.png');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 200px 20px; /* Adjust padding to increase or decrease margin */
+            border-radius: 0;
+            margin-bottom: 50px; /* Adjust margin-bottom for additional space */
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+            z-index: 1; /* Ensure the overlay is above the background image */
+        }
+
+        .content {
+            position: relative;
+            z-index: 2; /* Ensure the content is above the overlay */
+            color: #fff;
+            text-align: center;
+        }
+
+        .feature {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        /* Custom CSS for footer */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="text-center">Welcome to ChatClub</h1>
+            <p class="text-center">A simple and secure chat application</p>
+            <a href="signup.html" class="btn btn-primary btn-lg">Sign Up</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 feature">
+                <span class="feature-icon">&#128172;</span>
+                <h3>Chat with Friends</h3>
+                <p>Stay connected with your friends and family.</p>
+            </div>
+            <div class="col-md-4 feature">
+                <span class="feature-icon">&#x1F4F2;</span>
+                <h3>Send Photos and Videos</h3>
+                <p>Share moments with your loved ones instantly.</p>
+            </div>
+            <div class="col-md-4 feature">
+                <span class="feature-icon">&#x1F4F1;</span>
+                <h3>Private and Secure</h3>
+                <p>Your conversations are encrypted for maximum security.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ChatClub. All Rights Reserved.</p>
+            <p>Address: 123 Chat Street, Cityville, Country</p>
+            <p>Email: info@chatclub.com | Phone: +1 (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+
+</html>

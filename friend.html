@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Application - Send Friend Requests</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for styling */
+    body {
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      font-family: cursive;
+    }
+    .card {
+      border-radius: 10px;
+      height: 100vh; /* Fill entire viewport height */
+    }
+    .card-header {
+      background-color: #eaee0a; /* Bootstrap primary color for header */
+    }
+    .card-header h3 {
+      color: white; /* Text color for header */
+    }
+    .user-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .user-list-item {
+      border-bottom: 1px solid #dee2e6;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .user-list-item img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+      object-fit: cover; /* Maintain aspect ratio */
+    }
+    .user-name {
+      margin-right: auto; /* Pushes the user name to the left as far as possible */
+    }
+    .add-friend-btn {
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .add-friend-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+        <h3 class="text-center" style="color: #070707d5;">Add Friends</h3>
+    </div>
+    <div class="card-body">
+      <ul class="user-list">
+        <!-- JavaScript will populate this list -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Array of real names
+    var realNames = ["John Doe", "Jane Smith", "Michael Johnson", "Emily Davis", "Daniel Wilson","Heena Pathan","Aslam khan","Abdul Mir", "Sarah Brown", "David Martinez", "Olivia Taylor", "William Anderson", "Emma Thomas"];
+
+    // Array of profile picture URLs
+    var profilePictures = [
+      "pic10.png",
+      "pic9.png",
+      "pic8.png",
+      "pic7.png",
+      "pic6.png",
+      "pic55.png",
+      "pic4.png",
+      "pic3.png",
+      "pic2.png",
+      "pic1.png",
+      "pic13.png",
+      "pic12.png",
+      "pic11.png"
+    ];
+
+    // Generate random users with real names and profile pictures
+    function generateRandomUsers(numUsers) {
+      var users = [];
+      for (var i = 0; i < numUsers; i++) {
+        var randomIndex = Math.floor(Math.random() * realNames.length);
+        var user = {
+          id: i + 1,
+          name: realNames[randomIndex],
+          profilePicture: profilePictures[i % profilePictures.length] // Repeatedly use profile pictures if there are fewer images than users
+        };
+        users.push(user);
+      }
+      return users;
+    }
+
+    // Render users on the page
+    function renderUsers(users) {
+      var userList = $('.user-list');
+      userList.empty(); // Clear previous list
+      users.forEach(function(user) {
+        var listItem = $('<li class="user-list-item"></li>');
+        var img = $('<img src="' + user.profilePicture + '" alt="Profile Picture">');
+        var userName = $('<div class="user-name">' + user.name + '</div>');
+        var addButton = $('<button class="add-friend-btn">Add Friend</button>');
+        listItem.append(img);
+        listItem.append(userName);
+        listItem.append(addButton);
+        userList.append(listItem);
+      });
+    }
+
+    // Generate and render random users
+    $(document).ready(function() {
+      var numUsers = 13; // Number of random users to generate
+      var randomUsers = generateRandomUsers(numUsers);
+      renderUsers(randomUsers);
+    });
+  </script>
+</body>
+</html>

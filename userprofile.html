@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - ChatClub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Custom CSS for styling */
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            border-radius: 0;
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+            position: relative; /* To position the settings icon */
+        }
+
+        .card-header {
+            background-color:  #eaee0a;
+            color: #fff;
+            text-align: center;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            position: relative; /* To position the settings icon */
+            padding-right: 2em; /* Add space for the icon */
+        }
+
+        .card-header h3 {
+            margin: 0;
+            padding: 20px;
+        }
+
+        .card-body {
+            padding: 30px;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            display: block;
+            border: 5px solid #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-info {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .profile-info h5 {
+            color: #007bff;
+        }
+
+        .edit-profile-btn {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .edit-profile-btn:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .verify-option {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .settings-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+            color: #fff;
+            font-size: 1.5em; /* Responsive size */
+            cursor: pointer; /* Add pointer cursor */
+        }
+
+        /* Tooltip */
+        .tooltip-inner {
+            background-color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center" style="color: #070707d5;">User Profile</h3>
+                        <!-- Settings Icon with Tooltip -->
+                        <i class="fas fa-cog settings-icon" data-toggle="tooltip" data-placement="left" title="Settings"></i>
+                    </div>
+                    <div class="card-body">
+                        <img src="Profilepic.jpg" alt="Profile Picture" class="profile-picture">
+                        <div class="profile-info">
+                            <h5>Name:</h5>
+                            <p>JohnDoe</p>
+                        </div>
+                        <div class="profile-info">
+                            <h5>Username:</h5>
+                            <p>@JohnDoe_12</p>
+                        </div>
+                        <div class="profile-info">
+                            <h5>Email:</h5>
+                            <p>johndoe12@hotmail.com</p>
+                        </div>
+                        <div class="profile-info">
+                            <h5>Member Since:</h5>
+                            <p>April 8, 2024</p>
+                        </div>
+                        <div class="profile-info">
+                            <h5>Date of Birth:</h5>
+                            <p>25-07-1995</p>
+                        </div>
+                        <div class="profile-info">
+                            <h5>Account Type:</h5>
+                            <p>Standard</p>
+                        </div>
+                        <!-- Add more profile information as needed -->
+                        <a href="#" class="btn btn-primary btn-block edit-profile-btn">Edit Profile</a>
+                        <div class="verify-option">
+                            <button class="btn btn-secondary">Verify Email</button>
+                            <button class="btn btn-secondary">Verify Phone Number</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Tooltip Script -->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>

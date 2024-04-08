@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application - Inbox</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for styling */
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: cursive;
+            /* Stylish font */
+        }
+
+        .card {
+            border-radius: 0;
+            height: 100%;
+        }
+
+        .card-header {
+            background-color: #eaee0a;
+        }
+
+        .card-header h3 {
+            color: white;
+            /* Text color for header */
+        }
+
+        .chat-list {
+            list-style: none;
+            padding-left: 0;
+            height: calc(100% - 60px);
+            /* Subtract header height */
+            overflow-y: auto;
+        }
+
+        .chat-list-item {
+            border-bottom: 1px solid #dee2e6;
+            padding: 10px 0;
+        }
+
+        .chat-list-item:last-child {
+            border-bottom: none;
+        }
+
+        .chat-list-item a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .chat-list-item a:hover {
+            color: #007bff;
+        }
+
+        .media {
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h3 class="text-center" style="color: #070707d5;">Inbox</h3>
+        </div>
+        <div class="card-body">
+            <ul class="chat-list">
+                <li class="chat-list-item">
+                    <a href="#">
+                        <div class="media">
+                            <img src="pic1.png" class="mr-3 rounded-circle" alt="User Image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Salim Mir</h5>
+                                Hey, how are you?
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="chat-list-item">
+                    <a href="#">
+                        <div class="media">
+                            <img src="pic2.png" class="mr-3 rounded-circle" alt="User Image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Afaq Khan</h5>
+                                Hii!!
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="chat-list-item">
+                    <a href="#">
+                        <div class="media">
+                            <img src="pic3.png" class="mr-3 rounded-circle" alt="User Image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Payal</h5>
+                                Email kar De
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="chat-list-item">
+                    <a href="#">
+                        <div class="media">
+                            <img src="pic4.png" class="mr-3 rounded-circle" alt="User Image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Adnan Katoch</h5>
+                                Kidr hai aj?
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="chat-list-item">
+                    <a href="#">
+                        <div class="media">
+                            <img src="pic55.png" class="mr-3 rounded-circle" alt="User Image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Ashutosh Singh</h5>
+                                9875462185
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="chat-list-item">
+                    <a href="#">
+                        <div class="media">
+                            <img src="pic6.png" class="mr-3 rounded-circle" alt="User Image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Lokesh Thakur</h5>
+                                Haan Veerai
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="chat-list-item">
+                    <a href="#">
+                        <div class="media">
+                            <img src="pic7.png" class="mr-3 rounded-circle" alt="User Image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Pranav Jamwal</h5>
+                                Ok
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="chat-list-item">
+                    <a href="#">
+                        <div class="media">
+                            <img src="pic8.png" class="mr-3 rounded-circle" alt="User Image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Depika</h5>
+                                Get well soon
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="chat-list-item">
+                    <a href="#">
+                        <div class="media">
+                            <img src="pic9.png" class="mr-3 rounded-circle" alt="User Image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Ashish Bhatt</h5>
+                                Bhar nikal
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="chat-list-item">
+                    <a href="#">
+                        <div class="media">
+                            <img src="pic10.png" class="mr-3 rounded-circle" alt="User Image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Nihar Singh</h5>
+                                Hey, how are you?
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="chat-list-item">
+                    <a href="#">
+                        <div class="media">
+                            <img src="pic11.png" class="mr-3 rounded-circle" alt="User Image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Parmeet Kour</h5>
+                                Thk hai
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="chat-list-item">
+                    <a href="#">
+                        <div class="media">
+                            <img src="pic12.png" class="mr-3 rounded-circle" alt="User Image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Kamran Mir</h5>
+                                Maine Bta diya hai usko kal he
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="chat-list-item">
+                    <a href="#">
+                        <div class="media">
+                            <img src="pic13.png" class="mr-3 rounded-circle" alt="User Image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Er.Ishfaq</h5>
+                                Ok brother
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <!-- Add more chat conversations as needed -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
